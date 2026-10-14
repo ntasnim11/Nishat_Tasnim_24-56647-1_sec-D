@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            width: 300px;
+            margin: 50px auto;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+        <label for="fullname">Fullname :</label>
+        <input type="text" name="fullname"
+        id="fullname" required>
+        <br><br>
+
+        <label for="password">Password :</label>
+        <input type="password" name="password"
+        id="password" required>
+        <br><br>
+
+        <label for="dob">Date of Birth :</label>
+        <input type="date" name="dob"
+        id="dob" required>
+        <br><br>
+
+        <label for="photo">Choose file</label>
+        <input type="file" name="photo"
+        id="photo" required>
+        <br><br>
+
+        <label for="gender1">Gender:</label>
+        <input type="radio" name="gender"
+        id="gender1" value="Male"> Male
+
+        <input type="radio" name="gender"
+        id="gender2" value="Female"> Female
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
